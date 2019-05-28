@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ty-auth" />
+        <module name="ty-util" />
+        <module name="ty-core" />
+        <module name="ty-cloud" />
+        <module name="ty-web" />
+        <module name="ty-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tycloud" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ty-api" options="-parameters" />
+      <module name="ty-auth" options="-parameters" />
+      <module name="ty-cloud" options="-parameters" />
+      <module name="ty-core" options="-parameters" />
+      <module name="ty-util" options="-parameters" />
+      <module name="ty-web" options="-parameters" />
+    </option>
+  </component>
+</project>
