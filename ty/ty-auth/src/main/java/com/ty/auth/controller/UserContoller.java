@@ -50,7 +50,7 @@ public class UserContoller {
 
     @RequestMapping("/auth/json/loginVerify.htm")
     public String loginVerify(HttpServletRequest request, HttpServletResponse response, String userName, String passWord){
-        log.info("/auth/json/loginVerify.htm 用户登录信息验证。");
+        log.info("/auth/json/loginVerify.htm 用户登录信息验证111。");
         String requestHeader = request.getHeader("user-agent");
         String resorceStr = authService.userVerify(userName, passWord,requestHeader);
         response.setHeader("Authorization",resorceStr);
